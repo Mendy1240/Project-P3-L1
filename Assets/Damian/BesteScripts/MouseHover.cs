@@ -13,7 +13,7 @@ public class MouseHover : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
     }
     public void OnPointerEnter(PointerEventData eventData)
     {
-        transform.localScale *= 1.1f;
+        transform.localScale *= 1.3f;
     }
     public void OnPointerExit(PointerEventData eventData)
     {

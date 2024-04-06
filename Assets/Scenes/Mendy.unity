@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 243334041}
   - component: {fileID: 243334040}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -640,7 +640,7 @@ GameObject:
   - component: {fileID: 1370614821}
   - component: {fileID: 1370614820}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Walls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -739,33 +739,14 @@ GameObject:
   - component: {fileID: 1466551860}
   - component: {fileID: 1466551859}
   - component: {fileID: 1466551858}
-  - component: {fileID: 1466551857}
+  - component: {fileID: 1466551862}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1466551857
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1466551856}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c2d443ed50dfa94b82dbfc933ee52c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hor: 0
-  ver: 0
-  dir: {x: 0, y: 0, z: 0}
-  speed: 100
-  rotDir: {x: 0, y: 0, z: 0}
-  mouseX: 0
-  rotSpeed: 100
 --- !u!136 &1466551858
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -845,6 +826,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1466551862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1466551856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da2341f5a8cd94a4ebea7a2dab429ec9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Hor: 0
+  Ver: 0
+  speed: 100
+  moveDir: {x: 0, y: 0, z: 0}
 --- !u!1 &1539092225
 GameObject:
   m_ObjectHideFlags: 0
@@ -857,7 +854,7 @@ GameObject:
   - component: {fileID: 1539092227}
   - component: {fileID: 1539092226}
   - component: {fileID: 1539092230}
-  - component: {fileID: 1539092229}
+  - component: {fileID: 1539092231}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -931,21 +928,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1539092229
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1539092225}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa76454151a9a604cb4442ac0a54d150, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotDir: {x: 0, y: 0, z: 0}
-  mouseY: 0
-  rotSpeed: 100
 --- !u!114 &1539092230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -979,3 +961,19 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!114 &1539092231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539092225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da2341f5a8cd94a4ebea7a2dab429ec9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Hor: 0
+  Ver: 0
+  speed: 100
+  moveDir: {x: 0, y: 0, z: 0}

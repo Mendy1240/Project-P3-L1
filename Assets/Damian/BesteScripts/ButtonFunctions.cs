@@ -10,4 +10,10 @@ public class ButtonFunctions : MonoBehaviour
     {
         SceneManager.LoadScene(1);
     }
+
+    public void Quit ()
+    {
+        SceneManager.LoadScene (0);
+    }
+    
 }

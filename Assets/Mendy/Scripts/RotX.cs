@@ -2,14 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerRot : MonoBehaviour
+public class RotX : MonoBehaviour
 {
-        public Transform head;
+    public Transform head;
     public float mouseY;
     public Vector3 headRot;
     public float rotSpeed;
     public float maxRotationX = 60f;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -30,8 +29,6 @@ public class PlayerRot : MonoBehaviour
 
         head.localRotation = Quaternion.Euler(newRotationX, currentRotation.y, currentRotation.z);
     }
-
-    // Methode om de rotatie te beperken tot het bereik van -maxRotationX tot maxRotationX
     float ClampRotation(float rotation)
     {
         if (rotation > 180)

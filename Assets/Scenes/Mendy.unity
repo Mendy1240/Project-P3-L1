@@ -606,9 +606,10 @@ GameObject:
   - component: {fileID: 930652849}
   - component: {fileID: 930652848}
   - component: {fileID: 930652847}
+  - component: {fileID: 930652851}
   m_Layer: 0
   m_Name: prop1
-  m_TagString: Prop
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -691,6 +692,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &930652851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 930652846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2858e40086c47549bf5a40a21f25400, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 50
 --- !u!1001 &948027964
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1393,7 +1407,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Hor: 0
   Ver: 0
-  speed: 30
+  speed: 10
   moveDir: {x: 0, y: 0, z: 0}
 --- !u!114 &1466551863
 MonoBehaviour:
